@@ -1,0 +1,13 @@
+name=input("Enter the student name:")
+department=input("Enter department:")
+print("Enter marks for 3 subjects:")
+math= int(input(" math marks: "))
+phy= int(input("phy marks: "))
+Che= int(input("Che marks: "))
+total= math+phy+Che
+print("Name:",name)
+print("Department:",department)
+print("math Marks:",math)
+print("phy Marks:",phy)
+print("Che Marks:",Che)
+print("Total Marks:",total)
