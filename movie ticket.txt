@@ -1,0 +1,58 @@
+age=17
+is_student=True
+movie_type="3D"
+day=6
+print("______movie ticket______")
+if age>=18:
+    print("status: Adult")
+print("------")
+if age<18:
+    base_price=150
+else:
+    base_price=250
+print("base ticket price :",base_price)
+print("---------")
+if movie_type=="normal":
+    extra=0
+elif movie_type=="3D":
+    extra=100
+elif movie_type=="imax":
+    extra=200
+else :
+    extra=0
+print("extra charges for ",movie_type,":",extra)
+print("----------")
+discount=0 
+if age>18:
+    if is_student:
+        discount=50
+        print("student discount applied:Rs 50")
+else:
+    if is_student:
+        discount=70
+        print("student discount applied:Rs 70")
+print("---------")
+special_offer="eliglible offer" if day>=6 else"weekend- no offer"
+print("offer status:",special_offer)
+match day:
+    case 1:
+        print("monday")
+    case 2:
+        print("tuesday")
+    case 3:
+        print("wednesday")
+    case 4:
+        print("thursday")
+    case 5:
+        print("friday")
+    case 6:
+        print("saturday")
+    case 7:
+        print("sunday")
+    case _:
+        print("invalid")
+final_amount=base_price+extra-discount
+print("final ticket price:",final_amount)
+
+
+        
