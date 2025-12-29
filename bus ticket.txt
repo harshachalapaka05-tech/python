@@ -1,0 +1,78 @@
+Name=input("Enter you are name:")
+Age = int(input("Enter you are Age:"))
+Gender =input("Enter you are Gender:")
+Contact_Number = int(input("Enter you are Number:"))
+form = input("Enter you are boarding place")
+To = input("Enter you destination")
+Bus_type = input("Enter you bus type ")
+ticket = int(input("number of tickets:"))
+day = int(input("enter you day:"))
+print("-----Online Bus ticket Booking-------")
+print("Name:",Name)
+print("Age:",Age)
+print("Gender:",Gender)
+print("Contact Number:",Contact_Number)
+print("boarding place:",form)
+if ticket == 1:
+    base_price = 1200
+else:
+    base_price = 2400
+
+if To == "kkd":
+    price = 0
+elif To == "rjy":
+    price = 250
+elif To == "elloru":
+    price = 350
+elif To == "vijy":
+    price = 500
+elif To == "nadhigama":
+    price = 600
+elif To == "surya petta":
+    price == 800
+elif To == "chotu upal":
+    price = 1200
+elif To == "KPHB":
+    price = 1500
+elif To == "hyd":
+    price = 1600
+else:
+    price = 0
+print("destination:",To)
+
+print("-------BUS TYPE-------",)
+if Bus_type =="Non-AC":
+    extra = 0
+elif Bus_type =="AC":
+    extra = 300
+elif Bus_type == "Seater+Sleeper":
+    extra = 500
+else :
+    extra = 0
+print("Bus Type",Bus_type)
+special_price = "Eligible for weekend " if day >= 6 else "Weekend - No offer"
+print("Special price:", special_price)
+print("-----------------------------")
+
+match day:
+    case 1:
+        print("Mon")
+    case 2:
+        print("Tue")
+    case 3:
+        print("Wed")
+    case 4:
+        print("Thu")
+    case 5:
+        print("Fri")
+    case 6:
+        print("Sat")
+    case 7:
+        print("Sun")
+    case _:
+        print("Invalid")
+print("----------------------")
+final_amount = base_price +extra+price
+print("price of ticket print:",base_price)
+print("extra charges for ",Bus_type ,":",extra)
+print("Final ticket price:", final_amount)
