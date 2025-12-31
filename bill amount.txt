@@ -1,0 +1,9 @@
+def calculate_total(price,quantity):
+    total=price*quantity
+    return total
+item_name=input("enter item name:")
+price=float(input("enter item price:"))
+quantity=int(input("enter quantity:"))
+bill_amount=calculate_total(price,quantity)
+print("items",item_name)
+print("total bill amount:",bill_amount)
