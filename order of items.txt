@@ -1,0 +1,9 @@
+order_list=[]
+choice="yes"
+while choice=="yes":
+    item=input("enter the item")
+    order_list.append(item)
+    choice=input("add more items?(yes or no)")
+print("in your final order:")
+for item in order_list:
+    print(item)
