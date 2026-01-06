@@ -1,0 +1,2 @@
+k=open("filehandling.txt")
+print(k.read())
