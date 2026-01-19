@@ -1,0 +1,2 @@
+this_list=["ram","sita","ganesh","hanuman","arujn","siva","sri","sati"]
+print(this_list[1:4:1])
