@@ -1,0 +1,33 @@
+# Read input
+stn = input().strip()      # source string
+n = int(input().strip())   # number of words
+
+# We will count how many words can be built
+count = 0
+
+# Loop through each word
+for _ in range(n):
+    word = input().strip()  # the current word
+    
+    # Make a copy of stn letters so we can try using them
+    letters = list(stn)  # list of characters we can use
+    
+    # Assume we can build it
+    can_build = True
+    
+    # Try to use letters for each character in the word
+    for ch in word:
+        if ch in letters:
+            # if character is found, remove it from letters
+            letters.remove(ch)
+        else:
+            # character not found
+            can_build = False
+            break
+    
+    # If we could build the word, count it
+    if can_build:
+        count += 1
+
+# Print the final answer
+print(count)
