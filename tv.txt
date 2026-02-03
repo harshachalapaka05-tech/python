@@ -1,0 +1,9 @@
+a=["Tv","laptop","mouse","keyboard","mouse","speaker"]
+a.remove("mouse")
+a.insert(2,"switch")
+a.append("printer")
+a.append("camera")
+a.pop(5)
+b=a.copy()
+print(a)
+print(b)
