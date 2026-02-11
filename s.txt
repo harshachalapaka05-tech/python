@@ -1,0 +1,5 @@
+h=["siva","","sita","","sati","","ganseh",""]
+for s in h:
+    if s=="sati":
+        pass
+    print("remaining",s)
